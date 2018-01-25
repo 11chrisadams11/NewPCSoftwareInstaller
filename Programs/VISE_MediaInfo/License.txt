@@ -1,0 +1,1 @@
+This product uses MediaInfo library, Copyright (c) 2002-2015 http://mediaarea.net/MediaInfo" mailto:Info@MediaArea.net

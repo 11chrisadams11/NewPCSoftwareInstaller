@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lehi New Computer Setup</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="content">
+    <div id="settings">
+        <div class="setting"><label for="laptop">Is this a laptop?</label>
+            <input type="checkbox" id="laptop">
+            <div id="laptopChecker" class="settingsChecker">
+                No
+                <div id="laptopSlider" class="settingsSlider">
+                    <div id="laptopSliderButton" class="settingsSliderButton"></div>
+                </div>
+                Yes
+            </div>
+        </div>
+        <div class="setting"><label for="popo">It this a police computer?</label>
+            <input type="checkbox" id="popo">
+            <div id="popoChecker" class="settingsChecker">
+                No
+                <div id="popoSlider" class="settingsSlider">
+                    <div id="popoSliderButton" class="settingsSliderButton"></div>
+                </div>
+                Yes
+            </div>
+        </div>
+        <div id="popoCamerasQuestion" class="setting"><label for="popoCameras">Does it need police camera software?</label>
+            <input type="checkbox" id="popoCameras">
+            <div id="popoCamChecker" class="settingsChecker">
+                No
+                <div id="popoCamSlider" class="settingsSlider">
+                    <div id="popoCamSliderButton" class="settingsSliderButton"></div>
+                </div>
+                Yes
+            </div>
+        </div>
+
+        <div id="extrasButton" class="button">
+            <div id="extrasButtonText"><span>Extras</span><span>Close</span></div>
+            <div id="extrasCheckboxes">
+                <p><input type="checkbox" id="extrasCaselle"> <label for="extrasCaselle">Caselle</label></p>
+                <p><input type="checkbox" id="extrasVLC"> <label for="extrasVLC">VLC</label></p>
+                <p><input type="checkbox" id="extrasXprotect"> <label for="extrasXprotect">Milestone XProtect</label></p>
+                <p><input type="checkbox" id="extrasEfilecabinet"> <label for="extrasEfilecabinet">eFileCabinet</label></p>
+                <p><input type="checkbox" id="extrasGoogleEarth"> <label for="extrasGoogleEarth">Google Earth Pro</label></p>
+                <p><input type="checkbox" id="extrasDropbox"> <label for="extrasDropbox">Dropbox</label></p>
+            </div>
+        </div>
+
+        <div id="goButton" class="button disabled">Start</div>
+        <div id="progressBar">
+            <div id="progress">
+            </div>
+            <div id="progressCount">0%</div>
+        </div>
+    </div>
+    <div id="installDetails"></div>
+    <div id="rebootSection">
+        <p>All steps have completed. Click button to reboot system.</p>
+        <div id="rebootButton" class="button">Reboot</div>
+    </div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

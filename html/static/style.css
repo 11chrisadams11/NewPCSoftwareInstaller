@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.setting {
+    margin: 5px 20px;
+    display: inline-block;
+}
+
+#settings {
+    width: 80%;
+    margin: 0 auto;
+    /*border: 1px solid black;*/
+    background: #e2e2e2;
+    padding: 10px;
+    color: black;
+    text-align: center;
+    border-radius: 0 0 8px 8px;
+    position: relative;
+}
+
+#laptop, #popo, #popoCameras {
+    display: none;
+}
+
+.settingsChecker {
+    font-size: 12px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.settingsSlider {
+    margin: 0 5px;
+    width: 30px;
+    height: 10px;
+    border-radius: 5px;
+    /*background: #b22e25;*/
+    background: #a99e9e;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.settingsSlider:hover {
+    cursor: pointer;
+}
+
+.settingsSliderButton {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    background: white;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+#goButton {
+    background: lightgrey;
+    color: black;
+    margin-top: 10px;
+}
+
+#goButton.disabled {
+    border: 1px solid lightgrey;
+    color: lightgrey;
+    pointer-events: none;
+    background: white;
+}
+
+#goButton.noClick {
+    pointer-events: none;
+}
+
+#goButton:hover, #extrasButton:hover {
+    cursor: pointer;
+    background: #ededed;
+}
+
+#extrasButton {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 65px;
+    width: 60px;
+    background: #d3d3d3;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#extrasButtonText {
+    width: 188px;
+    height: 29px;
+    padding: 0 8px;
+}
+
+#extrasButtonText span:first-child {
+    float: left;
+}
+
+#extrasButtonText span:last-child {
+    float: right;
+}
+
+#extrasCheckboxes {
+    margin: 10px;
+    text-align: left;
+}
+
+#popoCamerasQuestion, #popoCamChecker {
+    opacity: 0;
+}
+
+#progressBar {
+    width: 80%;
+    height: 20px;
+    margin-top: 10px;
+    border: 1px solid black;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    background: white;
+    border-radius: 2px;
+    display: none;
+}
+
+#progress {
+    /*background: #b7e1bb;*/
+    background: linear-gradient(to right, #cdeb8e 0%,#a5c956 100%);
+    width: 0%;
+    height: 20px;
+    position: relative;
+    border-radius: 2px;
+}
+
+#progressCount {
+    text-align: center;
+    color: black;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+#installDetails {
+    width: 80%;
+    height: 70%;
+    background: white;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+#installDetails .detail:nth-child(odd) {
+    background: #f6f6f6;
+    border-radius: 3px;
+}
+
+.detail {
+    position: relative;
+    text-indent: 10px;
+    height: 25px;
+    vertical-align: middle;
+    line-height: 25px;
+}
+
+.detailImage {
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+}
+
+.loader {
+    margin-left: 5px;
+    height: 10px;
+}
+
+#rebootSection {
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    background: #e2e2e2;
+    border-radius: 8px 8px 0 0;
+}
+
+#rebootButton {
+    background: #ec4c44;
+    color: white;
+    margin-top: 5px;
+}
+
+#rebootButton:hover {
+    cursor: pointer;
+    background: #be3f37;
+}
+
+#rebootButton.disabled {
+    border: 1px solid lightgrey;
+    background: #ecc2c2;
+    pointer-events: none;
+}
